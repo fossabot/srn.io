@@ -71,6 +71,8 @@ import { Provider } from 'react-redux';
 import routes from '../shared/routes';
 
 app.use((req, res) => {
+  res.header('Content-Type', 'text/html; charset=utf-8');
+
   match({routes, location: req.url}, (err, redirectLocation, renderProps) => {
     if (err) {
       return res.status(500).end('Internal server error');
