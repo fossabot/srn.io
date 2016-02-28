@@ -12,7 +12,7 @@ const store = configureStore(window.__INITIAL_STATE__);
 const node = document.getElementById('root');
 
 if (process.env.NODE_ENV === 'production') {
-  history.listen(location => {
+  browserHistory.listen(location => {
     ga('send', location);
   });
 }
