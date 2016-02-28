@@ -59,6 +59,9 @@ module.exports = {
     new SaveAssetsJson({
       path: __dirname + '/assets/dist/',
       filename: 'assets.json'
+    }),
+    new webpack.DefinePlugin({
+      GA_TRACKING_CODE: JSON.stringify(process.env.GA_TRACKING_CODE)
     })
   ]
 };
