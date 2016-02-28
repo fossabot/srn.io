@@ -49,6 +49,7 @@ const renderFullPage = (html, initialState) => {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>srn.io - Søren Brokær</title>
+        <meta name="description" content="${settings.bio}">
         ${process.env.NODE_ENV === 'production' ? css : ''}
       </head>
       <body>
