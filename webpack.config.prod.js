@@ -52,9 +52,9 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify('production'),
-        BROWSER: JSON.stringify(true),
-        GA_TRACKING_CODE: JSON.stringify(process.env.GA_TRACKING_CODE)
-      }
+        BROWSER: JSON.stringify(true)
+      },
+      GA_TRACKING_CODE: JSON.stringify(process.env.GA_TRACKING_CODE)
     }),
     new ExtractTextPlugin('styles.[hash].min.css'),
     new SaveAssetsJson({
