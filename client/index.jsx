@@ -13,7 +13,8 @@ const node = document.getElementById('root');
 
 if (process.env.NODE_ENV === 'production') {
   browserHistory.listen(location => {
-    ga('send', location.pathname);
+    ga('set', 'page', location.pathname);
+    ga('send', 'pageview');
   });
 }
 
