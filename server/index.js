@@ -16,7 +16,9 @@ if (process.env.NODE_ENV !== 'production') {
 app.disable('x-powered-by');
 
 app.use(compression());
-app.use('/assets', express.static(path.resolve(__dirname, '../assets')));
+app.use('/assets', express.static(path.resolve(__dirname, '../assets'), {
+  maxAge: '1d'
+}));
 
 var posts = [];
 var settings = {};
