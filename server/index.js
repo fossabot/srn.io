@@ -17,7 +17,7 @@ app.disable('x-powered-by');
 
 app.use(compression());
 app.use('/assets', express.static(path.resolve(__dirname, '../assets'), {
-  maxAge: '1d'
+  maxAge: '7d'
 }));
 
 var posts = [];
