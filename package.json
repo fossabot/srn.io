@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/srn/srn.io#readme",
   "dependencies": {
-    "babel-polyfill": "6.7.4",
+    "babel-polyfill": "6.9.0",
     "compression": "1.6.1",
     "express": "4.13.4",
     "firebase": "2.4.2",
