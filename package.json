@@ -49,6 +49,6 @@
     "extract-text-webpack-plugin": "1.0.1",
     "style-loader": "0.13.1",
     "webpack-dev-middleware": "1.6.1",
-    "webpack-hot-middleware": "2.10.0"
+    "webpack-hot-middleware": "2.12.0"
   }
 }
